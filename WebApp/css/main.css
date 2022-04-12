@@ -1,16 +1,20 @@
 body {
     margin: 20px auto;
     width: 90%;
-    background-image: linear-gradient(to right, teal, green);
+    background-image: linear-gradient(to right, cyan, lime );
 }
 
 nav ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 20px;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
     list-style: none;
-    font-weight: bold;
-    font-size: 50;
     background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
 }
 
 
@@ -18,14 +22,15 @@ footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 10px;
     list-style: none;
-    font-weight: bold;
     font-size: 10;
     background: rgba(0, 0, 0, 0.3);
 }
 
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 50px;
+    font-size: 2em;
+    padding: 20px;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 a {
     text-decoration: none;
@@ -35,11 +40,14 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
+    font-size: 4em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin: auto;
     padding: 40px;
+    padding-top: 150px;
     text-align: center;
+    color: purple;
+    -webkit-text-stroke: 3px #000;
 }
 
 h2 {
@@ -51,8 +59,9 @@ h2 {
 }
 
 p {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.5em;
-    color: #333;
+    color: blueviolet;
     text-align: center;
 }
 footer {
