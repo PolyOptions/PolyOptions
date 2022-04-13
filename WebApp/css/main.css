@@ -11,6 +11,10 @@ nav ul {
     position:fixed;
 }
 
+div {
+    margin-bottom: -28px;
+}
+
 
 footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -37,7 +41,7 @@ a {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: blueviolet;
     border: none;
     color: white;
     padding: 32px 64px;
@@ -69,9 +73,8 @@ h1 {
 h2 {
     font-size: 2em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    margin-top: 100px;
     text-align: center;
-    padding: 30px;
+    padding:30px;
 }
 
 p {
@@ -86,12 +89,14 @@ p {
     color: blueviolet;
 }
 
-.white{
-    background-color:rgba(255, 255, 255, 0.3);
-}
-
 .black{
     background-color:rgba(255, 0, 255, 0.2);
+}
+
+.aboutpage{
+    background: url("/WebApp/imgs/about-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title{
@@ -106,14 +111,6 @@ p {
     margin: auto;
     padding: 20px;
     line-height: 240%;
-}
-
-.leftbar{
-    background-color: red;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 1000px;
-    width:10%;
 }
 
 footer {
