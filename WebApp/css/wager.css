@@ -1,0 +1,31 @@
+body{
+    margin: auto;
+    padding: 10px;
+}
+
+.left{
+    flex: 1;
+    border: 1px solid indigo;
+    padding: 1rem;
+}
+
+.right{
+    flex: 1;
+    border: 1px solid indigo;
+    padding: 1rem;
+}
+
+.center{
+    flex: 2;
+    border: 1px solid indigo;
+    padding: 1rem;
+}
+
+.parent{
+    display:flex;
+}
+
+p{
+    font-size: 2em;
+    text-align: center;
+}
