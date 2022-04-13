@@ -131,6 +131,11 @@ p {
     padding-bottom: 400px;
     margin-bottom: 50px;
 }
+.aboutblock{
+    margin: auto;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.6);
+}
 
 .roadmaptitle{
     text-align: center;
