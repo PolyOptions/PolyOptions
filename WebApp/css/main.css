@@ -94,9 +94,10 @@ p {
 }
 
 .aboutpage{
-    background: url("/WebApp/imgs/about-background.png");
+    background: url("../imgs/about-background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .title{
