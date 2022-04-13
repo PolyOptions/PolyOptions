@@ -19,10 +19,10 @@ div {
 
 footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 10px;
     list-style: none;
     font-size: 10;
     background: rgba(255, 255, 255, 0.7);
+    margin:0;
 }
 
 nav ul li, footer ul li {
@@ -81,7 +81,7 @@ h2 {
 p {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.5em;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     color: black;
     text-align: center;
 }
@@ -101,6 +101,14 @@ p {
     background-position: center;
 }
 
+.roadmappage{
+    background: url("../imgs/roadmap-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -50px;
+}
+
 .title{
     size: 100px;
     padding-top: 150px;
@@ -113,6 +121,23 @@ p {
     margin: auto;
     padding: 20px;
     line-height: 240%;
+}
+
+.roadmapblock{
+    padding: 80px;
+    margin: auto;
+    width: 30%;
+    background-color: rgba(0, 255, 255, 0.6);
+    padding-bottom: 400px;
+    margin-bottom: 50px;
+}
+
+.roadmaptitle{
+    text-align: center;
+    font-size: 2em;
+    color: black;
+    margin: auto;
+    margin-top: -70px;
 }
 
 footer {
