@@ -106,7 +106,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: -50px;
+    margin-bottom: -25px;
 }
 
 .title{
@@ -127,8 +127,7 @@ p {
     padding: 80px;
     margin: auto;
     width: 30%;
-    background-color: rgba(0, 255, 255, 0.6);
-    padding-bottom: 400px;
+    background-color: rgba(0, 255, 255, 0.8);
     margin-bottom: 50px;
 }
 .aboutblock{
@@ -156,4 +155,10 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+li{
+    font-size: 2em;
+    margin: auto;
+    padding: 30px;
 }
