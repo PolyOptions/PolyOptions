@@ -12,17 +12,33 @@
 
             <div class="left">
                 <p>Order book</p>
+
+                <div class="leftlower">
+
+                </div>
             </div>
     
             <div class="center">
                 <p>Graph</p>
+                <canvas id="canvas" width="300" height="100"></canvas>
             </div>
     
             <div class="right">
                 <p>Trade</p>
+                <button class="enableEthereumButton" onclick="button();">Connect Wallet</button> 
+                <h2>Account: <span class="showAccount"></span></h2>    
             </div>
 
         </div>
+
+        <script>
+			
+            async function button(){
+                if(typeof window.ethereum !== 'undefined') {
+                    ethereum.request({method: 'eth_requestAccounts'})
+                }
+            }
+        </script>  
 
     </body>
 

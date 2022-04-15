@@ -42,7 +42,7 @@ a {
 }
 
 button {
-    background-color: blueviolet;
+    background-image: radial-gradient(#BB8FCE, blueviolet);
     border: none;
     color: white;
     padding: 32px 64px;
@@ -56,7 +56,7 @@ button {
 }
 
 button:hover{
-    background-color: purple;
+    background-image: radial-gradient(purple, blueviolet);
 }
 
 h1 {
@@ -127,7 +127,7 @@ p {
     padding: 80px;
     margin: auto;
     width: 30%;
-    background-color: rgba(0, 255, 255, 0.8);
+    background-image: radial-gradient(rgba(0, 255, 255, 0.8), #ABFFF9);
     margin-bottom: 50px;
 }
 .aboutblock{

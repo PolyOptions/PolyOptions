@@ -9,6 +9,12 @@ body{
     padding: 1rem;
 }
 
+.leftlower{
+    background-color: gray;
+    padding: 200px;
+    margin: auto;
+}
+
 .right{
     flex: 1;
     border: 1px solid indigo;
