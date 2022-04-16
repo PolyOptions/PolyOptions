@@ -1,37 +1,98 @@
 body{
-    margin: auto;
     padding: 10px;
+    height: 100%;
+    background-color: #002733;
 }
 
 .left{
     flex: 1;
-    border: 1px solid indigo;
+    border: 1px solid #849597;
     padding: 1rem;
+    max-width: 10%;
 }
 
 .leftlower{
     background-color: gray;
     padding: 200px;
-    margin: auto;
 }
 
 .right{
     flex: 1;
-    border: 1px solid indigo;
+    border: 1px solid #849597;
     padding: 1rem;
+    max-width: 15%;
 }
 
 .center{
-    flex: 2;
-    border: 1px solid indigo;
-    padding: 1rem;
+    flex: 1;
+    border: 1px solid #849597;
+    padding: 5px;
 }
 
 .parent{
     display:flex;
 }
 
-p{
-    font-size: 2em;
+.candlecanvas{
+    background-color: #013340;
+    margin: auto;
+    display: block;
+    width: 100%;
+    height:80;
+}
+
+.bookdetail{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 1em;
+    color: #EFEAD9;
+    text-align: left;
+}
+
+.innerdivider{
+    background-color: #013340;
+    margin: auto;
+    margin-left: 10px;
+    width: 100%;
+    padding: 5px;
+}
+
+.backbutton{
+    background-color: #013340;
+    border: none;
+    color: #EFEAD9;
+    padding: 16px 16px;
     text-align: center;
+    margin-bottom: 5px;
+}
+
+.backbutton:hover{
+    background-color: #218CD3;
+}
+
+p{
+    font-size: 1em;
+    text-align: center;
+    margin:auto;
+    color: #EFEAD9;
+}
+
+h1 {
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    margin: auto;
+    text-align: center;
+    color: black;
+    -webkit-text-stroke: 1.5px blueviolet;
+}
+
+h2{
+    color: #849597;
+}
+
+select{
+    background-color: #013340;
+    color: #EFEAD9;
+    appearance: none;
+    padding: 10px;
 }

@@ -9,33 +9,49 @@
     </head>
     <body>
         <div class="parent">
+            <button class="backbutton" onclick="location.href = '../index.html'">Return</button>
+            <h1>PolyOptions</h1>
+            <button class="backbutton" onclick="button()">Connect Wallet</button> 
+
+        </div>
+        <div class="parent">
 
             <div class="left">
-                <p>Order book</p>
-
-                <div class="leftlower">
-
+                <div class="parent">
+                    <select name="symbol" id="cars">
+                        <option value="BTC">BTC/USD</option>
+                        <option value="ETH">ETH/USD</option>
+                        <option value="ADA">ADA/USD</option>
+                    </select>
+                    
+                    <div class="innerdivider">
+                        <p class="bookdetail">Bid: 0.00</p>
+                        <p class="bookdetail">Ask: 0.00</p>
+                    </div>
                 </div>
+
             </div>
     
             <div class="center">
-                <p>Graph</p>
-                <canvas id="canvas" width="300" height="100"></canvas>
+                <canvas id="candleCanvas" class="candlecanvas"></canvas>
             </div>
     
             <div class="right">
                 <p>Trade</p>
-                <button class="enableEthereumButton" onclick="button();">Connect Wallet</button> 
-                <h2>Account: <span class="showAccount"></span></h2>    
             </div>
 
         </div>
 
         <script>
+
+            var canvas = document.getElementById("candleCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#000000";
 			
             async function button(){
                 if(typeof window.ethereum !== 'undefined') {
                     ethereum.request({method: 'eth_requestAccounts'})
+                    
                 }
             }
         </script>  
