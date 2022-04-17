@@ -8,6 +8,12 @@
         <link rel="stylesheet" type="text/css" href="css/wager.css">
     </head>
     <body>
+        <dialog open class="dialog" id="dialog">
+            <p style="color: black;">This section of the website is not yet finished. It is only published live for testing and development purposes. Check back on 06/01/2022 for the full functionality.</p>
+            <p style="color: black; margin: 50px;"><b>PolyOptions is not liable for any loss of currency or damages caused by attempting to use the site in its current state.</b></p>
+            <button class="closebutton" onclick="closePopup()">Close popup</button>
+        </dialog>
+
         <div class="parent">
             <button class="backbutton" onclick="location.href = '../index.html'">Return</button>
             <h1>PolyOptions</h1>
@@ -32,31 +38,53 @@
 
             </div>
     
-            <div class="center">
-                <canvas id="candleCanvas" class="candlecanvas"></canvas>
+            <div class="center" id="chartholder">
+                <canvas id="chartcanvas" class="chartcanvas"></canvas>
             </div>
     
             <div class="right">
-                <p>Trade</p>
+                <p>Wager (MATIC)</p>
+                <textarea class="tradebox">1</textarea>
+                <div class="parent">
+                    <button class="tradebutton">-</button>
+                    <button class="tradebutton">+</button>
+                </div>-
+                </div>+
             </div>
 
         </div>
 
-        <script>
+        <script type="text/javascript">
 
-            var canvas = document.getElementById("candleCanvas");
-            var ctx = canvas.getContext("2d");
-            ctx.fillStyle = "#000000";
+
+            //chart refresh code
+            function Render(){
+                const Http = new XMLHttpRequest();
+                const url='https://api.exchange.coinbase.com/products/BTC-USD/candles';
+                Http.open("GET", url);
+                Http.send();
+
+                Http.onreadystatechange = (e) => {
+                    console.log(Http.responseText)
+                }       
+            }
 			
+            setInterval(Render, 100 )
+
+            // button logic 
             async function button(){
                 if(typeof window.ethereum !== 'undefined') {
                     ethereum.request({method: 'eth_requestAccounts'})
                     
                 }
             }
+
+            function closePopup(){
+                var dialog = document.getElementById('dialog');
+                
+                dialog.close();
+            }
+
         </script>  
-
     </body>
-
-
 </html>
