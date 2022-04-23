@@ -48,8 +48,18 @@
                 <div class="parent">
                     <button class="tradebutton">-</button>
                     <button class="tradebutton">+</button>
-                </div>-
-                </div>+
+                </div>
+                <div class="separator"></div>
+                <p>Percent change</p>
+                <textarea class="tradebox">+0.5%</textarea>
+                <div class="parent">
+                    <button class="tradebutton">-</button>
+                    <button class="tradebutton">+</button>
+                </div>
+
+                <button class="callbutton">Call</button>
+                <button class="putbutton">Put</button>
+                
             </div>
 
         </div>
@@ -65,7 +75,7 @@
                 Http.send();
 
                 Http.onreadystatechange = (e) => {
-                    console.log(Http.responseText)
+                    //console.log(Http.responseText)
                 }       
             }
 			
@@ -74,8 +84,8 @@
             // button logic 
             async function button(){
                 if(typeof window.ethereum !== 'undefined') {
-                    ethereum.request({method: 'eth_requestAccounts'})
-                    
+                    var accounts = ethereum.request({method: 'eth_requestAccounts'})
+                    console.log(accounts);
                 }
             }
 

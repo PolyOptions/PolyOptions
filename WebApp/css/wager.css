@@ -102,6 +102,40 @@ body{
     background-color: #218CD3;
 }
 
+
+.callbutton{
+    border: none;
+    background-color: #869A00;
+    color:#EFEAD9;
+    margin: auto;
+    padding: 30px;
+    margin-top: 50px;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+.putbutton{
+    border: none;
+    background-color: #DD2E2B;
+    color:#EFEAD9;
+    margin: auto;
+    padding: 30px;
+    margin-top: 10px;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+.callbutton:hover{
+    background-color: #218CD3;
+}
+
+.putbutton:hover{
+    background-color: #218CD3;
+}
+
+
 p{
     font-size: 1em;
     text-align: center;
@@ -129,6 +163,10 @@ select{
     padding: 10px;
 }
 
+select:hover{
+    background-color: #218CD3;
+}
+
 .dialog{
     width: 80%;
     height: 50%;
@@ -138,5 +176,9 @@ select{
 }
 
 .closebutton{
+    margin-top: 30px;
+}
+
+.separator{
     margin-top: 30px;
 }
